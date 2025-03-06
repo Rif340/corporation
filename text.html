@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Countdown</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #3a0ca3, #f72585);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        #countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .time-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .label {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 0, 255, 0.3), rgba(0, 0, 0, 0.7));
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            filter: blur(50px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Custom Countdown</h1>
+        <div id="countdown">
+            <div class="time-box">
+                <span id="days">99</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="time-box">
+                <span id="hours">99</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="time-box">
+                <span id="minutes">99</span>
+                <span class="label">Mins.</span>
+            </div>
+            <div class="time-box">
+                <span id="seconds">99</span>
+                <span class="label">Secs.</span>
+            </div>
+        </div>
+
+        <div class="circle"></div>
+    </div>
+
+    <script>
+        // Atur waktu awal
+        let days = 99, hours = 99, minutes = 99, seconds = 99;
+
+        function updateCountdown() {
+            // Kurangi detik
+            seconds--;
+
+            // Jika detik mencapai 80, reset semua ke 99
+            if (seconds < 80) {
+                days = 99;
+                hours = 99;
+                minutes = 99;
+                seconds = 99;
+            }
+
+            // Tampilkan waktu
+            document.getElementById("days").innerText = days.toString().padStart(2, "0");
+            document.getElementById("hours").innerText = hours.toString().padStart(2, "0");
+            document.getElementById("minutes").innerText = minutes.toString().padStart(2, "0");
+            document.getElementById("seconds").innerText = seconds.toString().padStart(2, "0");
+        }
+
+        // Perbarui setiap detik
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+
+</body>
+</html>
