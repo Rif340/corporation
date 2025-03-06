@@ -473,8 +473,14 @@ height: 550px;
   border: none;
   text-align: left; /* Mengubah teks menjadi rata kiri */
   margin-bottom:1rem;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
+.button-card:hover {
+  transform: scale(1.05);
+  cursor:pointer;
+  color:#2c023a
+}
 /* End Our Services Style */
 
 /* Talk To Us */

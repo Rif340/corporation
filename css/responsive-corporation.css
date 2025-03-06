@@ -105,7 +105,25 @@
     max-width: 250px;
     box-sizing: border-box;
   }
+  .container-content .container-card .card-text .button-card {
+    background-color: var(--pink);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.5px;
+    color: #fff;
+    padding: 4px 12.5px;
+    border: none;
+    text-align: left; /* Mengubah teks menjadi rata kiri */
+    margin-bottom:1rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
   
+  .button-card:hover {
+    transform: scale(1.05);
+    cursor:pointer;
+    color:#2c023a
+  }
   .sub-item-sec2 {
     display: flex;
     align-items: center;
