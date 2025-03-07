@@ -564,7 +564,6 @@ height: 550px;
 /* End Talk To Us */
 
 /* awal footer */
-
 .footer {
   background-color: #2c023a;
   color: white;
@@ -645,6 +644,86 @@ height: 550px;
 .section ul li a:hover {
   opacity: 0.8;
 }
+
+/* Mobile Layout Styles - Updated to match image */
+.mobile-layout {
+  display: none; /* Hidden by default */
+  padding: 2rem 1.5rem;
+  background-color: #2c023a; /* Dark purple background for mobile */
+  flex-direction: column;
+}
+
+/* Logo and Title Section */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo-img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0.5rem;
+}
+
+.logo-title {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Social Media Icons */
+.mobile-layout .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.mobile-layout .social-icons a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Two Column Layout for Media and Event */
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+
+
+.mobile-layout h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.mobile-layout ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.mobile-layout ul li {
+  margin-bottom: 0.75rem;
+}
+
+.mobile-layout ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+   /* Aplikasi Publik Section */
+   .aplikasi-publik {
+    margin-top: 0.5rem;
+}
+
+
 
 /* akhir footer */
 

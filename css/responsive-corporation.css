@@ -303,31 +303,23 @@
     height: auto;
   }
   
-  /* Footer Responsive */
+  /* awal footer */
   .footer-content {
-    grid-template-columns: 1fr;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 5%;
-  }
-  
-  .license-text {
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .social-icons {
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  /* Scroll to Top Button */
-  .scroll-to-top {
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-  }
+    display: none; /* Hide desktop layout on mobile */
+}
+
+.mobile-layout {
+    display: flex; /* Show mobile layout on mobile */
+}
+
+.footer-sections {
+    flex-direction: column;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+
+  /* akhir footer */
 }

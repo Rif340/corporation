@@ -173,69 +173,23 @@
       margin-right: 8px;
     }
     
-    /* Footer Responsive */
-    .footer {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 2rem 1rem;
-    }
-    
-    .footer-content {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    
-    .corporation-section, .section {
-      width: 100%;
-      text-align: center;
-      box-sizing: border-box;
-    }
-    
-    .corporation-title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 1rem 0;
-    }
-    
-    .social-icons a {
-      font-size: 1.5rem;
-    }
-    
-    .section h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.8rem;
-    }
-    
-    .section ul {
-      padding: 0;
-      list-style: none;
-    }
-    
-    .section ul li {
-      margin-bottom: 0.5rem;
-    }
-    
-    .license-text {
-      width: 100%;
-      text-align: center;
-      margin-top: 1.5rem;
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
-    
-    .license-text img {
-      width: 40px;
-      height: auto;
-      margin: 0.5rem;
-      vertical-align: middle;
-    }
+ /* awal footer */
+ .footer-content {
+  display: none; /* Hide desktop layout on mobile */
+}
+
+.mobile-layout {
+  display: flex; /* Show mobile layout on mobile */
+}
+
+.footer-sections {
+  flex-direction: column;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+
+/* akhir footer */
   }
